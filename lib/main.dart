@@ -23,23 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: StreamBuilder<User?>(
-        stream: FirebaseAuth.instance.authStateChanges(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return Scaffold(body: Center(child: CircularProgressIndicator()));
-          }
-          if (snapshot.hasError) {
-            return Scaffold(
-              body: Center(child: Text("Error: ${snapshot.error}")),
-            );
-          }
-          if (snapshot.hasData) {
-            return HomePage();
-          }
-          return LoginPage();
-        },
-      ),
+      home: OnboardingPage(),
       routes: {
         '/home': (context) => HomePage(),
         '/login': (context) => LoginPage(),
@@ -54,3 +38,21 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// StreamBuilder<User?>(
+//         stream: FirebaseAuth.instance.authStateChanges(),
+//         builder: (context, snapshot) {
+//           if (snapshot.connectionState == ConnectionState.waiting) {
+//             return Scaffold(body: Center(child: CircularProgressIndicator()));
+//           }
+//           if (snapshot.hasError) {
+//             return Scaffold(
+//               body: Center(child: Text("Error: ${snapshot.error}")),
+//             );
+//           }
+//           if (snapshot.hasData) {
+//             return HomePage();
+//           }
+//           return LoginPage();
+//         },
+//       ),
