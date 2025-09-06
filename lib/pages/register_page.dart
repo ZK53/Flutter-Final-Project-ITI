@@ -126,7 +126,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("$_nameController is registered")),
+          SnackBar(content: Text("${_nameController.text}is registered")),
         );
         _nameController.clear();
         _emailController.clear();
