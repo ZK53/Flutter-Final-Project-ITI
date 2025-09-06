@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "529468815943",
+    "project_id": "iti-training-16d06",
+    "storage_bucket": "iti-training-16d06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529468815943:android:16412cabbc09d38b8a0f62",
+        "android_client_info": {
+          "package_name": "com.example.flutter_day3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_JkGz7MdPFURjOM4OYEHP5BcVcACVbBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
